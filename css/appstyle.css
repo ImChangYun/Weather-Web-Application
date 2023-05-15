@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat'); /* import font */
+
+html * {
+    font-family: Montserrat, helvetica, arial, sans-serif;
+  }
+
+body {
+    background-color: #f5fcff;
+}
+
+.searchButton {
+    border-color: #e85ebf;
+    border-width: 2px;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+  
+.searchButton:hover {
+    background-color: #e85ebf;
+    border-color: #e85ebf;
+}
+
+.searchBarDesign {
+    background-color: #f9ffeb;
+    padding-top: 16px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.currentWeather {
+    margin-bottom: 20px;
+}
+
+.leftCountryInfo {
+    border-right: 2px solid lightgrey;
+}
+
+.weatherInfo {
+    border-radius: 20px;
+    background-color: #f9ffeb;
+}
+
+.forecastThreeDays {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.historySevenDays {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.countryName {
+    font-size: 5vw;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.countryDate {
+    font-size: 2.5vw;
+    text-align: center;
+    margin: 0;
+}
+
+.countryTime {
+    font-size: 2.5vw;
+    text-align: center;
+    margin: 0;
+}
+
+.weatherIcon {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.weatherText {
+    text-align: center;
+
+}
+
+.weatherStats {
+    font-size: 15px;
+}
+
+.sectionHeaders {
+    background-color: #f9ffeb;
+    font-size: clamp(14px, 1.5vw, 24px);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.searchErrorLine {
+    font-style: italic;
+    font-size: 1vw;
+    color: red;
+}
+
+.predictWeatherIcon {
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+    margin-right: 10px;
+    width: 90px !important;
+}
+
+.forecastWeather {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.historyWeather {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+
+/* Media Query Rules */
+
+@media (max-width: 576px) {
+    .leftCountryInfo {
+      border-right: none;
+    }
+  }
+
+@media (max-width: 480x) {
+    .forecastWeather {
+    justify-content: flex-start;
+    }
+}
+
+@media (max-width: 1101px) {
+    .historyWeather {
+    justify-content: flex-start;
+    }
+}
