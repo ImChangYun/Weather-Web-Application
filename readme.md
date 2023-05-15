@@ -3,7 +3,7 @@
 Hi, to get started on using the Weather Application you will need to download the repository.
 
 ## API Source
-Name: WeatherAPI.com
+Name: WeatherAPI.com <br/>
 URL: https://rapidapi.com/weatherapi/api/weatherapi-com/
 
 API Key Generation Instructions:
