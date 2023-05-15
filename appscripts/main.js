@@ -1,4 +1,5 @@
-const MY_API_KEY = ''
+const MY_API_KEY = '';
+
 
 // Country Data
 let ipData = {};
@@ -223,7 +224,7 @@ const weatherDataUpdate = function(result) {
         let currentWind = result.current.wind_mph;
 
         // Updates all associated IDs
-        weatherConditionImage.src = conditionImg;
+        weatherConditionImage.src = `https://${conditionImg.substring(2)}`; // BUG FIX: Adding https:// into the icon image website string
         weatherConditionText.innerHTML = currentWeatherCondition;
         temperatureStat.innerHTML = `${currentTemperature}\u2103`;
         humidityStat.innerHTML = `${currentHumidity}%`;
@@ -284,7 +285,7 @@ let iconBuilder = function(dataObj, id1, id2, id3, num) {
     temp = dataObj.forecast.forecastday[num-1].day.avgtemp_c;
 
     // Updates using associated IDs
-    iconID.src = iconImg;
+    iconID.src = `https://${iconImg.substring(2)}`; // BUG FIX: Adding https:// into the icon image website string
     dayID.innerHTML = date.dayOfWeek.substring(0,3);
     tempID.innerHTML = `${temp}\u2103`
 }
